@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poo </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="justify-self-end 2xl:mr-[3.125rem] my-[0.313rem] flex items-center	">
+        <h1 class="mx-[0.625rem]">Busqueda con número de cédula: </h1>
+        <div class="flex border  duration-300 rounded-full 2xl:w-[15.625rem] 2xl:h-[2.5rem] justify-center 
+                                      items-center focus-within:border-black w-[15rem] h-[3.125rem]">
+            <img src="icons8-búsqueda-50.png" class="2xl:w-[1.875rem] 2xl:h-[1.875rem] 2xl:mr-[0.188rem] w-[1.8rem]"
+                alt="No sirve esta mierda">
+            <input type="number" v-model="busquedaPalabra" placeholder="shearch"
+                class="2xl:h-[1.875rem] 2xl:w-[12.5rem] w-[10rem] focus:outline-0" id="busqueda" autocomplete="off">
+        </div>
+    </div>
+    <div class="h-[100vh] grid ">
+        <div
+            class="shadow-2xl pt-[2.5rem] m-auto w-[40%] grid border bg-gray-100 h-[500px] aling-items-center rounded-[0.9375rem] border-black">
+            <h1 class="text-[3.125rem] font-bold text-center mb-[0.625rem]">
+                Formulario
+            </h1>
+            <input type="text" placeholder="Ingrese el nombre"
+                class="inputs border-2 border-black rounded-[0.5rem] h-[1.875rem] w-[15.625rem] m-auto mb-[1.25rem]"
+                id="nombreInput" required>
+            <input type="text" placeholder="Ingrese el apellido"
+                class="inputs border-2 border-black rounded-[0.5rem] h-[1.875rem] w-[15.625rem] m-auto mb-[1.25rem]"
+                id="apellidoInput" required>
+            <input type="date" placeholder="Ingrese la fecha de nacimiento"
+                class="inputs border-2 border-black rounded-[0.5rem] h-[1.875rem] w-[15.625rem] m-auto mb-[1.25rem]"
+                id="fechaInput" required>
+            <input type="number" placeholder="Ingrese el numero de cedula "
+                class="inputs border-2 border-black rounded-[0.5rem] h-[1.875rem] w-[15.625rem] m-auto mb-[1.25rem]"
+                id="cedulaInput" required>
+            <button
+                class="bg-red-500 w-[6.25rem] rounded-full h-[2.5rem] m-auto border-2 border-black hover:bg-red-700 duration-300 mb-[1.875rem]"
+                onclick="guardar()">Guardar</button>
+        </div>
+        <div id="lista" class="grid grid-cols-2 border border-black w-[60%] justify-self-center mb-[50px] text-center ">
+            <div id="fullName" class="pt-[0.3125rem]">
+                <h1 class="font-bold text-2xl border-b border-black">
+                    Nombre completo
+                </h1>
+            </div>
+            <div id="cumpleaños" class="border-l border-black pt-[5px]">
+                <h1 class="font-bold text-2xl border-b border-black">
+                    ¿Cumpleaños?
+                </h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type=""></script>
+</body>
+
+</html>

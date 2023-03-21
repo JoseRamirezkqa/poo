@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+</head>
+
+<body class="h-[100vh] grid aling-items-center font-[Amaranth] text-xl">
+    <div class="m-auto h-[31.25rem] w-[40%] border-black border shadow-2xl">
+        <div class="h-[10%] px-[20px] py-[5px]">
+            <button onclick="volver()" class="hover:bg-gray-100 duration-500 hover:shadow-2xl">
+                 Volver 
+            </button>
+        </div>
+        <div class="grid grid-cols-2 h-[60%] ">
+            <div class=" justify-self-center h-[9.375rem] shadow-2xl">
+                <img src="persona.png" alt="">
+            </div>
+            <div>
+                <div>
+                    <h1 class="text-xl font-bold inline-block mr-[0.3125rem]">
+                        Nombre:
+                    </h1>
+                    <h1 id="nombre" class="inline-block"></h1>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold inline-block mr-[0.3125rem]">
+                        Cumpleaños:
+                    </h1>
+                    <h1 id="cumpleaños" class="inline-block "></h1>
+                </div>
+            </div>
+        </div>
+        <div class="h-[30%]">
+            <img src="cum.jpeg" alt="" class="w-[60%] h-[150px] m-auto hidden" id="cum">
+            <h1 class="hidden font-bold text-center text-4xl font-[Aladin]" id="noCum"></h1>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 ">
+    <div class="w-[70%] m-auto grid justify-items-center my-[3.125rem]">
+        <div class="m-[0.3125rem] w-[20rem]">
+            <label>Nombre: <input type="text" id="nombre" class="border border-black"></label>
+        </div>
+        <div class="m-[0.3125rem] w-[20rem]">
+            <label>Apellido: <input type="text" id="apellido" class="border border-black"></label>
+        </div>
+        <div class="m-[0.3125rem] w-[20rem]">
+            <label>Edad: <input type="number" id="edad" class="border border-black"></label>
+        </div>
+        <div class="">
+            <button id="save" class="border-2  bg-gray-100 hover:bg-gray-300 duration-500 rounded-full h-[2.5rem] w-[9.375rem]">Guardar</button>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 text-center w-[70%] m-auto" id="table">
+        <div class= 'border border-black'>Nombres:</div>
+        <div class= 'border border-black'>Apellido:</div>
+        <div class= 'border border-black'>Edad:</div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
